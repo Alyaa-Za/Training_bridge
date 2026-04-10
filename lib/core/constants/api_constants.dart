@@ -1,24 +1,10 @@
 class ApiConstants {
-  // Base URL - Change this for production
-  // ✅ API اختباري مجاني يعمل 100%
-  static const String baseUrl = 'https://reqres.in/api';
+   static const String baseUrl = 'http://192.168.8.163:8000/api/education';
 
   // Auth Endpoints
-  static const String login = '/login';
-  static const String logout = '/logout';
-  static const String profile = '/users/2';
-
-  // Storage Keys
-  static const String tokenKey = 'auth_token';
-  static const String roleKey = 'user_role';
-  static const String userDataKey = 'user_data';
-
-  // static const String baseUrl = 'http://192.168.8.163:8000/api/education';
-
-  // Auth Endpoints
-  // static const String login = '/login';
-  // static const String logout = '/logout';
-  // static const String profile = '/profile';
+   static const String login = '/login';
+   static const String logout = '/logout';
+   static const String profile = '/profile';
 
   // Student Endpoints
   static const String opportunities = '/opportunities';
@@ -36,7 +22,8 @@ class ApiConstants {
   static const String evaluate = '/institution/evaluate';
 
   // Storage Keys
-  // static const String tokenKey = 'auth_token';
-  // static const String roleKey = 'user_role';
-  // static const String userDataKey = 'user_data';
+  static const String tokenKey = 'auth_token';
+  static const String roleKey = 'user_role';
+  static const String userDataKey = 'user_data';
+
 }

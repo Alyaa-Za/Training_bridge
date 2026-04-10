@@ -311,6 +311,34 @@ class _ApplicantDetailsScreenState extends State<ApplicantDetailsScreen> {
                   ),
                 ],
               ),
+              // أضف هذا في applicant_details_screen.dart بعد عرض البيانات الأساسية
+
+              if (widget.applicant['screening_answers'] != null &&
+                  widget.applicant['screening_answers'].toString().isNotEmpty) ...[
+                const SizedBox(height: 20),
+                const Text(
+                  'Screening Answers',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimary,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Text(
+                      widget.applicant['screening_answers'],
+                      style: const TextStyle(
+                        fontSize: 14,
+                        color: AppColors.textSecondary,
+                        height: 1.6,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ] else ...[
               Container(
                 padding: const EdgeInsets.all(16),

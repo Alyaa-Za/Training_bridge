@@ -256,4 +256,10 @@ class ApiService {
       );
     }
   }
+
+  static const String interns = '/institution/interns';
+  static const String evaluate = '/institution/evaluate';
+
+  // Complaints
+  static const String complaints = '/institution/complaints';
 }
